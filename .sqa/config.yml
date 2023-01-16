@@ -1,0 +1,62 @@
+config:
+  credentials: []
+  project_repos:
+    git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder:
+      branch: master
+      repo: https://git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder.git
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.7
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder git:
+        commands:
+        - /usr/bin/env sh .sqa/script.beady-rust-harrier.sh
+        container: qc.acc_hilly-platinum-barracuda
+  QC.Doc:
+    repos:
+      git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.woolly-sapphire-chin.sh
+        container: qc.doc_slimy-crimson-flounder
+      git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder git:
+        commands:
+        - /usr/bin/env sh .sqa/script.pokey-asparagus-angelfish.sh
+        container: qc.doc_randy-seashell-eleuth
+      git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.grumpy-buff-chin.sh
+        container: qc.doc_slimy-lemon-newt
+  QC.Lic:
+    repos:
+      git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.thirsty-cardinal-grouse.sh
+        container: qc.lic_slaphappy-burgundy-avocet
+  QC.Sec:
+    repos:
+      git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.trippy-lilac-mouse.sh
+        container: qc.sec_woolly-crimson-sloth
+  QC.Sty:
+    repos:
+      git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.cozy-lavender-mongrel.sh
+        container: qc.sty_stuffy-tangerine-dragon
+      git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.slaphappy-bronze-mole.sh
+        container: qc.sty_sleazy-malachite-bombay
+  QC.Ver:
+    repos:
+      git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.fuzzy-platinum-seal.sh
+        container: qc.ver_wimpy-maroon-dragon
+timeout: 5400
