@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder git:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-turquoise-elephant.sh
-        container: qc.acc_messy-cinnabar-urchin
+        - /usr/bin/env sh .sqa/script.skinny-olive-fowl.sh
+        container: qc.acc_crabby-aquamarine-crab
   QC.Doc:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-bronze-spider.sh
-        container: qc.doc_nippy-mustard-tapir
+        - /usr/bin/env sh .sqa/script.scummy-lavender-quoll.sh
+        container: qc.doc_gimpy-lavender-bird
       git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder git:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-saffron-dalmatian.sh
-        container: qc.doc_hilly-wheat-chicken
+        - /usr/bin/env sh .sqa/script.wheezy-magnolia-booby.sh
+        container: qc.doc_scaly-celadon-dalmatian
       git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-cornflower-uakari.sh
-        container: qc.doc_snippy-periwinkle-hornet
+        - /usr/bin/env sh .sqa/script.crappy-flax-stoat.sh
+        container: qc.doc_flabby-puce-chin
   QC.Lic:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-ruby-akbash.sh
-        container: qc.lic_nerdy-beige-dhole
+        - /usr/bin/env sh .sqa/script.wimpy-puce-mouse.sh
+        container: qc.lic_muzzy-amber-otter
   QC.Met:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-tangerine-audemer.sh
-        container: qc.met_silly-brown-loon
+        - /usr/bin/env sh .sqa/script.hazy-scarlet-tapir.sh
+        container: qc.met_muggy-cerulean-quokka
   QC.Sec:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-puce-giraffe.sh
-        container: qc.sec_freaky-razzmatazz-badger
+        - /usr/bin/env sh .sqa/script.sloppy-vermilion-caterpillar.sh
+        container: qc.sec_bluesy-celadon-oyster
   QC.Sty:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-tan-rottweiler.sh
-        container: qc.sty_ready-amber-buzzard
+        - /usr/bin/env sh .sqa/script.trippy-mauve-collie.sh
+        container: qc.sty_shaggy-maroon-chameleon
       git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-cobalt-jaguar.sh
-        container: qc.sty_gamy-cardinal-barracuda
+        - /usr/bin/env sh .sqa/script.bluesy-heliotrope-coati.sh
+        container: qc.sty_wiggy-scarlet-cow
       git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-periwinkle-eleuth.sh
-        container: qc.sty_cheeky-rust-gar
+        - /usr/bin/env sh .sqa/script.crabby-maroon-tuatara.sh
+        container: qc.sty_tacky-maroon-wrasse
   QC.Ver:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/nearest-neighbor-finder get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-lime-dachshund.sh
-        container: qc.ver_scummy-red-cat
+        - /usr/bin/env sh .sqa/script.hasty-champagne-frigatebird.sh
+        container: qc.ver_snippy-blue-turkey
 timeout: 5400
